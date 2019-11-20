@@ -11,11 +11,6 @@ class JobsController < ApplicationController
 
   def new
     @job = Job.new
-    if @job.save
-      redirect_to job_path(@job)
-    else
-      render :new
-    end
   end
 
   def create
