@@ -13,7 +13,7 @@
       <tr>
         <td><%= link_to job.title, job_path(job.id) %></td>
         <td><%= job.school %></td>
-        <td><%= job.salary %></td>
+        <td><%= "£ #{job.salary} p/a"%></td>
       </tr>
     <% end %>
   </tbody>
