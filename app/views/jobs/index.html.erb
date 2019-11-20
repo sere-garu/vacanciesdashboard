@@ -11,7 +11,7 @@
   <tbody>
     <% @jobs.each do |job| %>
       <tr>
-        <td><%= job.title %></td>
+        <td><%= link_to job.title, job_path(job.id) %></td>
         <td><%= job.school %></td>
         <td><%= job.salary %></td>
       </tr>
